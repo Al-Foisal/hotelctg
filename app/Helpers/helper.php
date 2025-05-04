@@ -51,188 +51,189 @@ function menuList()
 
         ],
         [
-            'sideIcon'   => 'thermometer',
-            'title'      => 'Room Reservation',
-            'link'       => '',
-            'hasSub'     => true,
-            'permission' => 'Room_Reservation',
-            'subMenu'    => [
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Reservation List',
-                    'link'       => route('roomReservation.index'),
-                    'permission' => 'Reservation_List',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Check In',
-                    'link'       => route('roomReservation.create'),
-                    'permission' => 'Check_In',
-                ],
-            ],
+            'sideIcon'   => 'home',
+            'title'      => 'Reservation List',
+            'link'       => route('roomReservation.index'),
+            'hasSub'     => false,
+            'subMenu'    => [],
+            'permission' => 'Reservation_List',
 
         ],
         [
-            'sideIcon'   => 'thermometer',
-            'title'      => 'Room Reservation Setting',
-            'link'       => '',
-            'hasSub'     => true,
-            'permission' => 'Room_Reservation_Setting',
-            'subMenu'    => [
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Room Category',
-                    'link'       => route('rrs.roomCategory.index'),
-                    'permission' => 'Room_Type',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Bed Type',
-                    'link'       => route('rrs.bedType.index'),
-                    'permission' => 'Bed_Type',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Floor',
-                    'link'       => route('rrs.floor.index'),
-                    'permission' => 'Bed_Type',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Facility',
-                    'link'       => route('rrs.facility.index'),
-                    'permission' => 'Facility',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Promo Code',
-                    'link'       => route('promoCode.index'),
-                    'permission' => 'Promo Code',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Room or Apartment',
-                    'link'       => route('rrs.roa.index'),
-                    'permission' => 'Room_or_Apartment',
-                ],
-            ],
+            'sideIcon'   => 'home',
+            'title'      => 'Check In',
+            'link'       => route('roomReservation.create'),
+            'hasSub'     => false,
+            'subMenu'    => [],
+            'permission' => 'Check_In',
 
         ],
-        [
-            'sideIcon'   => 'user',
-            'title'      => 'Human Resource',
-            'link'       => '',
-            'hasSub'     => true,
-            'permission' => 'Human_Resource',
-            'subMenu'    => [
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Designation',
-                    'link'       => route('rrs.desg.index'),
-                    'permission' => 'Designation',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Employee',
-                    'link'       => route('rrs.emp.index'),
-                    'permission' => 'Employee',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Payroll',
-                    'link'       => route('rrs.payroll.index'),
-                    'permission' => 'Payroll',
-                ],
-        
-            ],
 
-        ],
 
         [
-            'sideIcon'   => 'thermometer',
-            'title'      => 'Resturant Management',
-            'link'       => '',
-            'hasSub'     => true,
-            'permission' => 'Resturant_Management',
-            'subMenu'    => [
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Billing',
-                    'link'       => route('resturantBilling.create'),
-                    'permission' => 'Resturant_Billing',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Menu Item',
-                    'link'       => route('resturant.menuItem.index'),
-                    'permission' => 'Menu_Item',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Menu Item Category',
-                    'link'       => route('resturant.menuItemCategory.index'),
-                    'permission' => 'Menu_Item_Category',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Table setup',
-                    'link'       => route('resturant.tableSetup.index'),
-                    'permission' => 'Table_setup',
-                ],
-            ],
-
+            'sideIcon'   => 'home',
+            'title'      => 'Room Category',
+            'link'       => route('rrs.roomCategory.index'),
+            'hasSub'     => false,
+            'subMenu'    => [],
+            'permission' => 'Room_Type',
         ],
         [
-            'sideIcon'   => 'thermometer',
-            'title'      => 'Inventory Setting',
-            'link'       => '',
-            'hasSub'     => true,
-            'permission' => 'Inventory_Setting',
-            'subMenu'    => [
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Supplier',
-                    'link'       => route('is.supplier.index'),
-                    'permission' => 'Supplier',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Product Category',
-                    'link'       => route('is.productCategory.index'),
-                    'permission' => 'Product_Category',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Product',
-                    'link'       => route('product.index'),
-                    'permission' => 'Product',
-                ],
-            ],
-
+            'sideIcon'   => 'home',
+            'title'      => 'Bed Type',
+            'link'       => route('rrs.bedType.index'),
+            'hasSub'     => false,
+            'subMenu'    => [],
+            'permission' => 'Bed_Type',
         ],
-
         [
-            'sideIcon'   => 'thermometer',
-            'title'      => 'Inventory Management',
-            'link'       => '',
-            'hasSub'     => true,
-            'permission' => 'Inventory_Management',
-            'subMenu'    => [
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Purchase',
-                    'link'       => route('purchase.index'),
-                    'permission' => 'Purchase',
-                ],
-                [
-                    'sideIcon'   => '',
-                    'title'      => 'Stock',
-                    'link'       => '',
-                    'permission' => 'Bed_Type',
-                ],
-            ],
-
+            'sideIcon'   => 'home',
+            'title'      => 'Floor Manage',
+            'link'       => route('rrs.floor.index'),
+            'hasSub'     => false,
+            'subMenu'    => [],
+            'permission' => 'Floor_Manage',
         ],
+        [
+            'sideIcon'   => 'home',
+            'title'      => 'Facility Manage',
+            'link'       => route('rrs.facility.index'),
+            'hasSub'     => false,
+            'subMenu'    => [],
+            'permission' => 'Facility_Manage',
+        ],
+        [
+            'sideIcon'   => 'home',
+            'title'      => 'Promo Code',
+            'link'       => route('promoCode.index'),
+            'hasSub'     => false,
+            'subMenu'    => [],
+            'permission' => 'Promo_Code',
+        ],
+        [
+            'sideIcon'   => 'home',
+            'title'      => 'Room or Apartment Manage',
+            'link'       => route('rrs.roa.index'),
+            'hasSub'     => false,
+            'subMenu'    => [],
+            'permission' => 'Room_or_Apartment_Manage',
+        ],
+
+        // [
+        //     'sideIcon'   => 'user',
+        //     'title'      => 'Human Resource',
+        //     'link'       => '',
+        //     'hasSub'     => true,
+        //     'permission' => 'Human_Resource',
+        //     'subMenu'    => [
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Designation',
+        //             'link'       => route('rrs.desg.index'),
+        //             'permission' => 'Designation',
+        //         ],
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Employee',
+        //             'link'       => route('rrs.emp.index'),
+        //             'permission' => 'Employee',
+        //         ],
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Payroll',
+        //             'link'       => route('rrs.payroll.index'),
+        //             'permission' => 'Payroll',
+        //         ],
+
+        //     ],
+
+        // ],
+
+        // [
+        //     'sideIcon'   => 'thermometer',
+        //     'title'      => 'Resturant Management',
+        //     'link'       => '',
+        //     'hasSub'     => true,
+        //     'permission' => 'Resturant_Management',
+        //     'subMenu'    => [
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Billing',
+        //             'link'       => route('resturantBilling.create'),
+        //             'permission' => 'Resturant_Billing',
+        //         ],
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Menu Item',
+        //             'link'       => route('resturant.menuItem.index'),
+        //             'permission' => 'Menu_Item',
+        //         ],
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Menu Item Category',
+        //             'link'       => route('resturant.menuItemCategory.index'),
+        //             'permission' => 'Menu_Item_Category',
+        //         ],
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Table setup',
+        //             'link'       => route('resturant.tableSetup.index'),
+        //             'permission' => 'Table_setup',
+        //         ],
+        //     ],
+
+        // ],
+        // [
+        //     'sideIcon'   => 'thermometer',
+        //     'title'      => 'Inventory Setting',
+        //     'link'       => '',
+        //     'hasSub'     => true,
+        //     'permission' => 'Inventory_Setting',
+        //     'subMenu'    => [
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Supplier',
+        //             'link'       => route('is.supplier.index'),
+        //             'permission' => 'Supplier',
+        //         ],
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Product Category',
+        //             'link'       => route('is.productCategory.index'),
+        //             'permission' => 'Product_Category',
+        //         ],
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Product',
+        //             'link'       => route('product.index'),
+        //             'permission' => 'Product',
+        //         ],
+        //     ],
+
+        // ],
+
+        // [
+        //     'sideIcon'   => 'thermometer',
+        //     'title'      => 'Inventory Management',
+        //     'link'       => '',
+        //     'hasSub'     => true,
+        //     'permission' => 'Inventory_Management',
+        //     'subMenu'    => [
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Purchase',
+        //             'link'       => route('purchase.index'),
+        //             'permission' => 'Purchase',
+        //         ],
+        //         [
+        //             'sideIcon'   => '',
+        //             'title'      => 'Stock',
+        //             'link'       => '',
+        //             'permission' => 'Bed_Type',
+        //         ],
+        //     ],
+
+        // ],
         [
             'sideIcon'   => 'thermometer',
             'title'      => 'Website Management',
@@ -308,6 +309,6 @@ function isOperator()
     if (auth()->user()->responsibility === 'Operator') {
         return true;
     } else {
-        return false;   
+        return false;
     }
 }
